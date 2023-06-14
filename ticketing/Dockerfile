@@ -1,3 +1,3 @@
-from attendize_web:latest
+from stuartlynn/attendize
 
 
