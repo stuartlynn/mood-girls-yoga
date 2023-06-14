@@ -21,7 +21,7 @@ function shuffle(testimonials) {
 export const Testemonials = ({ testemonials }) => {
   const testimonialSample = shuffle(testemonials).slice(0, 3);
   return (
-    <section className="w-full md:flex flex-row overflow-x-auto md:my-20">
+    <section className="w-full md:flex flex-row justify-around overflow-x-auto md:my-20">
       {testimonialSample.map(testemonial => (
         <Testemonial testemonial={testemonial} />
       ))}
