@@ -1,32 +1,32 @@
 async function fetchAPI(query, { variables } = {}, preview) {
-  const url = preview
-    ? process.env.NEXT_PUBLIC_WEBINY_PREVIEW_API_URL
-    : process.env.NEXT_PUBLIC_WEBINY_API_URL;
+    const url = preview
+        ? process.env.NEXT_PUBLIC_WEBINY_PREVIEW_API_URL
+        : process.env.NEXT_PUBLIC_WEBINY_API_URL;
 
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.NEXT_WEBINY_API_SECRET}`
-    },
-    body: JSON.stringify({
-      query,
-      variables
-    })
-  });
+    const res = await fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env.NEXT_WEBINY_API_SECRET}`
+        },
+        body: JSON.stringify({
+            query,
+            variables
+        })
+    });
 
-  const json = await res.json();
-  if (json.errors) {
-    console.error(json.errors);
-    throw new Error("Failed to fetch API");
-  }
+    const json = await res.json();
+    if (json.errors) {
+        console.error(json.errors);
+        throw new Error("Failed to fetch API");
+    }
 
-  return json.data;
+    return json.data;
 }
 
 export async function getAllClassTypes() {
-  const data = await fetchAPI(
-    `query Classes{
+    const data = await fetchAPI(
+        `query Classes{
       listClasses {
         data {
           title
@@ -36,15 +36,15 @@ export async function getAllClassTypes() {
         }
       }
   }`,
-    {},
-    true
-  );
-  return data.listClasses.data;
+        {},
+        true
+    );
+    return data.listClasses.data;
 }
 
 export async function getAllClasses() {
-  const data = await fetchAPI(
-    `query ScheduledClasses{
+    const data = await fetchAPI(
+        `query ScheduledClasses{
       listScheduledClasss {
           data {
             title
@@ -58,16 +58,16 @@ export async function getAllClasses() {
           }
         }
   }`,
-    {},
-    true
-  );
-  console.log(data);
-  return data.listScheduledClasss.data;
+        {},
+        true
+    );
+    console.log(data);
+    return data.listScheduledClasss.data;
 }
 
 export async function getTestimonials() {
-  const data = await fetchAPI(
-    `query Testimonials{
+    const data = await fetchAPI(
+        `query Testimonials{
       listTestimonials{
           data {
             quote
@@ -75,10 +75,10 @@ export async function getTestimonials() {
           }
         }
   }`,
-    {},
-    true
-  );
-  return data.listTestimonials.data;
+        {},
+        true
+    );
+    return data.listTestimonials.data;
 }
 
 // export async function getAllPostsWithSlug() {
