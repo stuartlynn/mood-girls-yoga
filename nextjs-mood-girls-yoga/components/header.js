@@ -4,7 +4,7 @@ import moodIcon from "./icons/Mood_Logo_SVG-20.svg";
 
 const links = [
     {
-        link: "#about",
+        link: "/about",
         text: "About",
         main: false
     },
@@ -14,7 +14,7 @@ const links = [
         main: true
     },
     {
-        link: "/classes",
+        link: "/book",
         text: "Book",
         main: false
     }
@@ -22,20 +22,22 @@ const links = [
 
 const generateLink = link => {
     let aTag = (
-        <Link
-            href={link.link}
-            className={` hover:underline text-highlight ${
-                link.main ? "font-bold" : "font-light text-2xl"
-            }`}
-        >
+        <Link href={link.link} className={` hover:underline text-highlight text-bold`}>
             {link.text}
         </Link>
     );
     if (link.main) {
         return (
             <h1>
-                <Link href={link.link}>
-                    <Image className="max-w-xl" priority src={moodIcon} alt="Mood Girls" />
+                <Link href={link.link} className="md:block hidden">
+                    <Image
+                        className="max-w-xl"
+                        width={451}
+                        height={227}
+                        priority
+                        src="/Mood_Logo-18.png"
+                        alt="Mood Girls"
+                    />
                 </Link>
             </h1>
         );
@@ -45,8 +47,19 @@ const generateLink = link => {
 
 export const Header = () => {
     return (
-        <header className="bg-primary text-2xl md:text-4xl  font-bold tracking-tight md:tracking-tighter leading-tight py-10 border-solid border-b-2 border-accent-1 ">
-            <nav className="flex  justify-center gap-10 items-center">
+        <header className="bg-primary text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight py-4 md:py-10 border-solid border-b-2 border-accent-1 ">
+            <nav className="flex md:justify-center justify-start md:gap-10 gap-2 items-center pr-10 md:pr-0">
+                <h1 className="block md:hidden justify-self-start mr-auto">
+                    <Link href={"/"}>
+                        <Image
+                            priority
+                            width={150}
+                            height={150}
+                            src="/Mood_Logo-22.png"
+                            alt="Mood Girls"
+                        />
+                    </Link>
+                </h1>
                 {links.map(generateLink)}
             </nav>
         </header>
