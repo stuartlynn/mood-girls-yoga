@@ -22,7 +22,7 @@ const links = [
 
 const generateLink = link => {
     let aTag = (
-        <Link href={link.link} className={` hover:underline text-highlight text-bold`}>
+        <Link href={link.link} className={` hover:underline text-bold font-thin`}>
             {link.text}
         </Link>
     );
@@ -47,7 +47,7 @@ const generateLink = link => {
 
 export const Header = () => {
     return (
-        <header className="bg-primary text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight py-4 md:py-10 border-solid border-b-2 border-accent-1 ">
+        <header className="bg-primary text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight py-4 md:py-10 border-solid border-b-2 border-accent-1 text-accent-1">
             <nav className="flex md:justify-center justify-start md:gap-10 gap-2 items-center pr-10 md:pr-0">
                 <h1 className="block md:hidden justify-self-start mr-auto">
                     <Link href={"/"}>
@@ -61,7 +61,22 @@ export const Header = () => {
                     </Link>
                 </h1>
                 {links.map(generateLink)}
+                <Link href="https://www.instagram.com/moodteenyoga/" className="block md:hidden">
+                    <Image src="/instagram.png" width={25} height={25} alt="Instagram link" />
+                </Link>
             </nav>
+            <div className="hidden md:flex text-center flex-row justify-center">
+                <Link href="https://www.instagram.com/moodteenyoga/" className="inline font-thin">
+                    <Image
+                        src="/instagram.png"
+                        width={30}
+                        height={30}
+                        className="inline mr-3"
+                        alt="flex-1 Instagram link"
+                    />
+                    @moodteenyoga
+                </Link>
+            </div>
         </header>
     );
 };
