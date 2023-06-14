@@ -21,7 +21,7 @@ export default function Index({ allTestimonials, allTeenagers }) {
                 <Testemonials testemonials={allTestimonials} />
             </OneUp>
             <section className="bg-secondary py-10 px-10 md:px-32 items-center text-accent-3">
-                <Link href="/classes">
+                <Link href="/book">
                     <h1 className="text-6xl text-center">Summer Course 2023 , booking now open</h1>
                 </Link>
             </section>
