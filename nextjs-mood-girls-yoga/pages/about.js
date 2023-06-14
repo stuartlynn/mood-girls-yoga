@@ -39,14 +39,14 @@ export default function Index({ allTestimonials, allTeenagers }) {
                     </li>
                 </ul>
             </OneUp>
-            <section className="bg-secondary py-10 px-32 items-center text-accent-3">
-                <h1 className="text-3xl text-center">
+            <section className="bg-secondary py-10 px-10 md:px-32 items-center text-accent-3">
+                <p className="text-3xl text-center">
                     To chat more about MOOD GIRLS or to discuss bespoke classes / programmes please
                     get in touch:{" "}
                     <a className="text-accent-1 text-bold" href="mailto:moodteenyoga@gmail.com">
                         moodteenyoga@gmail.com
                     </a>
-                </h1>
+                </p>
             </section>
 
             <OneUp color={"primary"}>
