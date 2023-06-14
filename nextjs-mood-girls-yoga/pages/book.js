@@ -23,9 +23,9 @@ export default function Index({ allTestimonials, allTeenagers }) {
         <Layout>
             <OneUp color={"tertiary"}>
                 <SectionHeader>
-                    <p>We created MOOD GIRLS Sponsorships because we want all girls to benefit from this powerful ancient practice. If you or your family have the means to pay for classes please do. If you’re not currently in a position to pay, please email</p>
-                    <a className="text-accent-1" href="mailto:moodteenyoga@gmail.com">moodteenyoga@gmail.com</a>
-                    <p>to apply for a fully funded place. If you’d like to donate a place, please see below!</p>
+                    <p className="text-2xl">We created MOOD GIRLS Sponsorships because we want all girls to benefit from this powerful ancient practice. If you or your family have the means to pay for classes please do. If you’re not currently in a position to pay, please email</p>
+                    <a className="text-2xl text-accent-1" href="mailto:moodteenyoga@gmail.com">moodteenyoga@gmail.com</a>
+                    <p className='text-2xl'>to apply for a fully funded place. If you’d like to donate a place, please see below!</p>
                 </SectionHeader>
             </OneUp>
             <section className=" bg-secondary w-full py-10 px-20">
