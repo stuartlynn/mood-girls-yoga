@@ -23,7 +23,7 @@ export default function Index({ allTestimonials, allTeenagers }) {
         <Layout>
             <OneUp color={"tertiary"}>
                 <SectionHeader>
-                    We created MOOD GIRLS Sponsorships because we want all girls to benefit from this powerful ancient practice. If you or your family have the means to pay for classes please do. If you’re not currently in a position to pay, please email moodteenyoga@gmail.com to apply for a fully funded place. If you’d like to donate a place, please see below!
+                    We created MOOD GIRLS Sponsorships because we want all girls to benefit from this powerful ancient practice. If you or your family have the means to pay for classes please do. If you’re not currently in a position to pay, please email <a className="text-accent-1" href="mailto:moodteenyoga@gmail.com">moodteenyoga@gmail.com</a> to apply for a fully funded place. If you’d like to donate a place, please see below!
                 </SectionHeader>
             </OneUp>
             <section className=" bg-secondary w-full py-10 px-20">
