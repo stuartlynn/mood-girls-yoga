@@ -9,13 +9,13 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#B7572D",
+                primary: "#BACAC0",
                 secondary: "#FDCBCA",
-                tertiary: "#55717F",
+                tertiary: "#F4E7D4",
                 highlight: "#CA9B8B",
 
-                "accent-1": "#F4E7D4 ",
-                "accent-2": "#BACAC0",
+                "accent-1": "#55717F",
+                "accent-2": "#55717F",
                 "accent-3": "#720F1D",
                 "accent-4": "#C0C9FD",
                 "accent-5": "#CBD390",

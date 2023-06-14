@@ -24,8 +24,8 @@ const generateLink = link => {
     let aTag = (
         <Link
             href={link.link}
-            className={` hover:underline text-accent-2 ${
-                link.main ? "font-bold" : "font-light text-xl"
+            className={` hover:underline text-highlight ${
+                link.main ? "font-bold" : "font-light text-2xl"
             }`}
         >
             {link.text}
@@ -45,7 +45,7 @@ const generateLink = link => {
 
 export const Header = () => {
     return (
-        <header className="bg-primary text-2xl md:text-4xl  font-bold tracking-tight md:tracking-tighter leading-tight py-10 border-solid border-b-2 border-accent-2 ">
+        <header className="bg-primary text-2xl md:text-4xl  font-bold tracking-tight md:tracking-tighter leading-tight py-10 border-solid border-b-2 border-accent-1 ">
             <nav className="flex  justify-center gap-10 items-center">
                 {links.map(generateLink)}
             </nav>

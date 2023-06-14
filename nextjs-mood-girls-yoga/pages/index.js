@@ -5,7 +5,8 @@ import { Testemonials } from "../components/testimonials";
 import Layout from "../components/layout";
 import Link from "next/link";
 
-export default function Index({ allTestimonials }) {
+export default function Index({ allTestimonials, allTeenagers }) {
+    console.log("teens ", allTeenagers);
     return (
         <Layout>
             <TwoUp>
@@ -26,7 +27,7 @@ export default function Index({ allTestimonials }) {
 
             <section className="bg-tertiary py-10 px-32">
                 <h2 className="text-4xl">Things I Wish I Knew as Teenager:</h2>
-                <Testemonials testemonials={allTestimonials} />
+                <Testemonials testemonials={allTeenagers} />
             </section>
         </Layout>
     );
@@ -34,8 +35,9 @@ export default function Index({ allTestimonials }) {
 
 export async function getStaticProps() {
     const allTestimonials = await getTestimonials();
+    const allTeenagers = await getTestimonials(true);
 
     return {
-        props: { allTestimonials }
+        props: { allTestimonials, allTeenagers }
     };
 }

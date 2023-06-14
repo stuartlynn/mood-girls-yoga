@@ -65,10 +65,11 @@ export async function getAllClasses() {
     return data.listScheduledClasss.data;
 }
 
-export async function getTestimonials() {
+export async function getTestimonials(teenager = false) {
+    let key = teenager ? "listTeenagerQuotes" : "listTestimonials";
     const data = await fetchAPI(
         `query Testimonials{
-      listTestimonials{
+      ${key}{
           data {
             quote
             personName
@@ -78,7 +79,7 @@ export async function getTestimonials() {
         {},
         true
     );
-    return data.listTestimonials.data;
+    return data[key].data;
 }
 
 // export async function getAllPostsWithSlug() {
