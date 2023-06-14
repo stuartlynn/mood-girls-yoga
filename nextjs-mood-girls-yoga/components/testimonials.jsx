@@ -4,8 +4,8 @@ export const Testemonial = ({ testemonial }) => {
       aria-label={`Testemonial from ${testemonial.personName}`}
       className=" w-full md:w-80 md:mx-5 "
     >
-      <p className="text-3xl font-bold my-5">{testemonial.quote}</p>
-      {testemonial.personName && <p className="italic">"{testemonial.personName}"</p>}
+      <p className="text-3xl italic my-5">{testemonial.quote}</p>
+      {testemonial.personName && <p className="font-bold">"{testemonial.personName}"</p>}
     </div>
   );
 };

@@ -23,16 +23,14 @@ export default function Index({ allTestimonials, allTeenagers }) {
         <Layout>
             <OneUp color={"tertiary"}>
                 <SectionHeader>
-                    We will practise breath work, yoga and meditation each week at the beautiful
-                    RESET studio in Kinning Park. 5th July - 9th August 2023 Every Wednesday
-                    3.30pm-4.30pm Suitable for beginners All equipment and mats provided
+                    We created MOOD GIRLS Sponsorships because we want all girls to benefit from this powerful ancient practice. If you or your family have the means to pay for classes please do. If you’re not currently in a position to pay, please email moodteenyoga@gmail.com to apply for a fully funded place. If you’d like to donate a place, please see below!
                 </SectionHeader>
             </OneUp>
             <section className=" bg-secondary w-full py-10 px-20">
                 <SectionHeader>Tickets</SectionHeader>
                 <div className="md:flex pt-10 md:flex-row md:justify-around justify-center md:items-start md:py-10">
-                    <BookingOption name={"Personal Ticket"} cost={80}>
-                        A ticket to attend the event
+                    <BookingOption name={"SUMMER 2023 PROGRAMME "} cost={80}>
+                        Six weeks exploring yoga at the beautiful RESET studio in Kinning Park, Glasgow
                     </BookingOption>
 
                     <BookingOption name={"Empower Her"} cost={80}>
