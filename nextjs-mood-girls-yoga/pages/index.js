@@ -28,8 +28,8 @@ export default function Index({ allTestimonials, allTeenagers }) {
 
             <OneUp color="tertiary">
                 <SectionHeader>Things I Wish I Knew as Teenager</SectionHeader>
+                <p className="italic">'I asked you on Instagram, you answered...'</p>
                 <Testemonials testemonials={allTeenagers} />
-                <p className='italic'>'I asked you on Instagram, you answered...'</p>
             </OneUp>
         </Layout>
     );

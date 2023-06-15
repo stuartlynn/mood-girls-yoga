@@ -55,7 +55,7 @@ export default function Index({ allTestimonials, allTeenagers }) {
                 </div>
             </TwoUp>
             <section className="bg-secondary py-10 px-10 md:px-32 items-center text-accent-3">
-                <Para className="text-3xl text-center">
+                <Para className="text-2xl text-center">
                     To chat more about MOOD GIRLS or to discuss bespoke classes / programmes please
                     get in touch:{" "}
                     <a className="text-accent-1 text-bold" href="mailto:moodteenyoga@gmail.com">
@@ -74,8 +74,7 @@ export default function Index({ allTestimonials, allTeenagers }) {
                         the community with teenagers in various different settings including;
                         schools, care homes, supported accommodation and prisons. Aileen is
                         passionate about social change and empowering young women to know their
-                        worth. Aileen lives in Glasgow with her husband Luke and their dog Molly. A
-                        little more from Aileen:
+                        worth. Aileen lives in Glasgow with her husband Luke and their dog Molly{" "}
                     </Para>
                     <h3 className="text-bold text-xl">A little more from Aileen</h3>
                     <Para className="italic px-10">
