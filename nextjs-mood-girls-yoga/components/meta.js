@@ -19,6 +19,12 @@ export default function Meta() {
                 content="Modern, accessible and inclusive yoga classes for young girls in schools, communities and more."
             />
             <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+            <meta property="og:" content={HOME_OG_IMAGE_URL} />
+            <meta property="og:title" content="Mood Girls Yoga" />
+            <meta
+                property="og:description"
+                content="Modern, accessible and inclusive yoga classes for young girls in schools, communities and more."
+            />
             <title>Mood Girls Yoga</title>
         </Head>
     );
