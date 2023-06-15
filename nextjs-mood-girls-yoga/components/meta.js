@@ -25,6 +25,31 @@ export default function Meta() {
                 property="og:description"
                 content="Modern, accessible and inclusive yoga classes for young girls in schools, communities and more."
             />
+            <meta property="og:url" content="https://www.moodgirlsyoga.com/" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Mood Girls Yoga" />
+            <meta
+                property="og:description"
+                content="Modern, accessible and inclusive yoga classes for young girls in schools, communities and more."
+            />
+            <meta
+                property="og:image"
+                content="https://www.moodgirlsyoga.com/_next/image?url=%2FMood_Logo-29.png&w=3840&q=75"
+            />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:domain" content="moodgirlsyoga.com" />
+            <meta property="twitter:url" content="https://www.moodgirlsyoga.com/" />
+            <meta name="twitter:title" content="Mood Girls Yoga" />
+            <meta
+                name="twitter:description"
+                content="Modern, accessible and inclusive yoga classes for young girls in schools, communities and more."
+            />
+            <meta
+                name="twitter:image"
+                content="https://www.moodgirlsyoga.com/_next/image?url=%2FMood_Logo-29.png&w=3840&q=75"
+            />
+
             <title>Mood Girls Yoga</title>
         </Head>
     );
